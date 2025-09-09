@@ -41,15 +41,13 @@
     .card h3 { margin:6px 0 6px; }
     .muted { color:var(--muted); }
     .faq { max-width:900px; margin:0 auto; }
-    .faq-item { background:var(--card); border-radius:14px; padding:18px; }
-    .faq-item + .faq-item { margin-top:12px; }
     article p { color:#dbe3f4; }
     footer { background:#0b1224; padding:28px 0; text-align:center; color:var(--muted); font-size:14px; }
     footer .cta { margin-left:8px; }
     a[href^="tel:"], a[href^="mailto:"] { color:#fff; }
     .how-to ol { max-width:780px; margin:0 auto; }
 
-    /* --- НОВЫЕ СТИЛИ ДЛЯ КЛИКАБЕЛЬНЫХ КАРТОЧЕК --- */
+    /* --- СТИЛИ ДЛЯ КЛИКАБЕЛЬНЫХ КАРТОЧЕК --- */
     a.card {
       display: block;
       background: var(--card);
@@ -63,6 +61,24 @@
     a.card:hover {
       transform: scale(1.02);
       box-shadow: 0 12px 28px rgba(0, 0, 0, .45);
+    }
+
+    /* --- СТИЛИ ДЛЯ КЛИКАБЕЛЬНОГО FAQ --- */
+    a.faq-item {
+      display: block;
+      background: var(--card);
+      border-radius: 14px;
+      padding: 18px;
+      text-decoration: none;
+      color: inherit;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+    a.faq-item + a.faq-item {
+      margin-top: 12px;
+    }
+    a.faq-item:hover {
+      background: #2b3855;
+      transform: scale(1.01);
     }
   </style>
 
