@@ -36,7 +36,6 @@
     section { padding:56px 0; }
     h2 { margin:0 0 28px; text-align:center; font-size:1.9rem; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px; }
-    .card { background:var(--card); border-radius:18px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,.35); }
     .card img { width:100%; height:220px; object-fit:cover; display:block; }
     .card-body { padding:18px 18px 22px; text-align:center; }
     .card h3 { margin:6px 0 6px; }
@@ -47,12 +46,27 @@
     article p { color:#dbe3f4; }
     footer { background:#0b1224; padding:28px 0; text-align:center; color:var(--muted); font-size:14px; }
     footer .cta { margin-left:8px; }
-    /* мелкие UX улучшения */
     a[href^="tel:"], a[href^="mailto:"] { color:#fff; }
     .how-to ol { max-width:780px; margin:0 auto; }
+
+    /* --- НОВЫЕ СТИЛИ ДЛЯ КЛИКАБЕЛЬНЫХ КАРТОЧЕК --- */
+    a.card {
+      display: block;
+      background: var(--card);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, .35);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    a.card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .45);
+    }
   </style>
 
-  <!-- JSON-LD: HowTo (как зарегистрироваться в 1win) -->
+  <!-- JSON-LD: HowTo -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -81,6 +95,7 @@
   }
   </script>
 </head>
+
 
 <body>
 <!-- HERO -->
