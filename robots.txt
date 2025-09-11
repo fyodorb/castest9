@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Указываем карту сайта с HTTPS
+Sitemap: https://1win-gg.info/sitemap.xml
