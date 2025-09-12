@@ -1,5 +1,14 @@
+# robots.txt for https://1win-gg.info/
+# Разрешаем индексацию всего сайта
 User-agent: *
 Allow: /
 
-# Указываем карту сайта с HTTPS
+# Явно указываем основное зеркало (для Яндекса)
+Host: 1win-gg.info
+
+# Карта сайта (HTTPS)
 Sitemap: https://1win-gg.info/sitemap.xml
+
+# Чистим дубли с UTM/клид-параметрами, чтобы не плодить копии страниц
+# (поддерживается Яндексом)
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&utm_id&utm_referrer&yclid&gclid&fbclid&ysclid&ref&referrer&from /
